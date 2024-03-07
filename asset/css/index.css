@@ -126,9 +126,6 @@ input[type="button"] {
     border: 2px solid var(--primary-color);
 }
 
-.hidden {
-    display: none;
-}
 
 .or {
     width: 17rem;
@@ -207,12 +204,6 @@ h2 {
     cursor: pointer;
 }
 
-#sign_in {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
 #modal_header {
     margin-top: 3rem;
 }
@@ -233,6 +224,10 @@ input[type="text"],
 #forgot_password {
     border-radius: 1.5rem;
 
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
