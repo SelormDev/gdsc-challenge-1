@@ -11,52 +11,61 @@
 
 <body>
 
+    <div class="main_form">
 
-    <div id="logo">
-        <img src="asset/img/X.svg" alt="logo">
+        <div id="logo">
+            <img src="asset/img/X.svg" alt="logo">
+        </div>
+
+        <div id="login">
+            <form method="post">
+                <h1 id="header">Happening now</h1>
+                <h3 id="sub_header">Join today.</h3>
+                <input type="button" name="google_sign_up" class="google_sign_up" value="Sign up with Google">
+                <input type="button" name="apple_sign_up" class="apple_sign_up" value="Sign up with Apple">
+                <h3 class="or"><span>or</span></h3>
+                <input type="button" name="create_account" id="create_account" value="Create account">
+                <p class="secondary_text tnc">By signing up, you agree to the <a href="#">Terms of Service</a> and
+                    <a href="#">Privacy Policy</a>,
+                    including <a href="#">Cookie Use</a>.
+                </p>
+                <h2>Already have an account?</h2>
+                <input type="button" name="login" id="login_btn" value="Sign in">
+            </form>
+
+        </div>
+
     </div>
 
-    <div id="login">
-        <form method="post">
+    <div id="footer">
+        <p>
+            About Download the X app Help Center Terms of Servive Privacy Policy Cookie Policy Accessibility Ads Info
+            Blog
+            Status Careers Brand Resources Advertising Marketing X for Business Developers Directory Settings
+        </p>
+        <p>
+            2024 X, Corp
+        </p>
+    </div>
 
-            <h1 id="header">Happening now</h1>
-            <h3 id="sub_header">Join today.</h3>
 
-            <input type="button" name="google_sign_up" class="google_sign_up" value="Sign up with Google">
-            <input type="button" name="apple_sign_up" class="apple_sign_up" value="Sign up with Apple">
+    <div class="sign_in hidden" id="modal">
+        <div id="modal_container">
+            <nav id="modal_nav">
+                <img src="./asset/img/cancel.png" id="cancel" alt="Esc">
+                <img src="./asset/img/Img - X.png" alt="X logo">
+            </nav>
+            <form action="" id="sign_in">
+                <h3 id="modal_header">Sign in to X </h3>
+                <input type="button" name="google_sign_up" class="google_sign_up" value="Sign up with Google">
+                <input type="button" name="apple_sign_up" class="apple_sign_up" value="Sign up with Apple">
+                <h3 class="or"><span>or</span></h3>
+                <input type="text" name="username" class="username" placeholder="Phone, email, or username">
+                <input type="button" name="next" value="Next">
+                <input type="button" id="forgot_password" name="forgot_password" value="Forgot password?">
 
-            <h3 class="or"><span>or</span></h3>
-
-            <input type="button" name="create_account" id="create_account" value="Create account">
-
-            <p class="secondary_text tnc">By signing up, you agree to the <a href="#">Terms of Service</a> and <a
-                    href="#">Privacy Policy</a>,
-                including <a href="#">Cookie Use</a>.</p>
-
-            <h2>Already have an account?</h2>
-
-            <input type="button" name="login" id="login_btn" value="Sign in">
-
-        </form>
-
-        <div class="sign_in hidden" id="modal">
-            <div id="modal_container">
-                <nav id="modal_nav">
-                    <img src="./asset/img/cancel.png" id="cancel" alt="Esc">
-                    <img src="./asset/img/Img - X.png" alt="X logo">
-                </nav>
-                <form action="" id="sign_in">
-                    <h3 id="modal_header">Sign in to X </h3>
-                    <input type="button" name="google_sign_up" class="google_sign_up" value="Sign up with Google">
-                    <input type="button" name="apple_sign_up" class="apple_sign_up" value="Sign up with Apple">
-                    <h3 class="or"><span>or</span></h3>
-                    <input type="text" name="username" class="username" placeholder="Phone, email, or username">
-                    <input type="button" name="next" value="Next">
-                    <input type="button" id="forgot_password" name="forgot_password" value="Forgot password?">
-
-                    <p>Don't have an account? <a href="#">Sign up</a></p>
-                </form>
-            </div>
+                <p class="sign_up_msg">Don't have an account? <a href="#">Sign up</a></p>
+            </form>
         </div>
     </div>
 
